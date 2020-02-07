@@ -1,0 +1,3 @@
+# To exit from interactive mode use ctrl+d
+
+docker run -it --rm alpine /bin/ash
