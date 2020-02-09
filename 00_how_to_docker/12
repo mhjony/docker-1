@@ -1,0 +1,7 @@
+docker run -d --name spawning-pool --restart=on-failure -e MYSQL_ROOT_PASSWORD=Kerrigan -e MYSQL_DATABASE=zerglings -v hatchery:/var/lib/mysql mysql --default-authentication-plugin=mysql_native_password
+
+# --name spawing-pool (the container itself is named)
+# --restart on-failure (container will restart on failure)
+# mysql root password is Kerrigan
+# database name is zerglings
+# mysql_native_password plugin that implements native authentication; that is, authentication based on the password hashing method in use from before the introduction of pluggable authentication

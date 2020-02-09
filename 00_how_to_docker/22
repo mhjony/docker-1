@@ -1,0 +1,10 @@
+docker swarm join --token SWMTKN-1-6d2xo2hagjhd0m3854s5coozuy6834i31kiyvvaap3sizyl3bh-0d5iwiqzurh1n7u7fm0kmrm8p 192.168.99.100:2377
+
+# first go to ssh service for your Aiur virtual machine using following command
+# > docker-machine ssh Aiur
+# Then run the above command. 
+# use the following command in Char ssh service to get your token number
+# > docker swarm join-token worker -q
+#
+# docker swarm init --advertise-addr $(docker-machine ip Char) -> this command creates a local swarm
+# 
